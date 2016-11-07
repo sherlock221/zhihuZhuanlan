@@ -28,16 +28,16 @@ export default class  API {
     /**
      * 获取指定的专栏信息
      */
-    static getColumnsByName(columName){
-        return Util.net.getJson(`${HOST}/columns/${columName}`,{});    
+    static getColumnsBySlug(slug){
+        return Util.net.getJson(`${HOST}/columns/${slug}`,{});    
     }
     
 
     /**
      * 获取指定的专栏文章列表
      */
-    static getPostsByColumnName(columName,limit,offset){
-        return Util.net.getJson(`${HOST}/columns/${columName}/posts`,{limit : limit , offset : offset});    
+    static getPostsBySlug(slug,limit,offset){
+        return Util.net.getJson(`${HOST}/columns/${slug}/posts`,{limit : limit , offset : offset});    
     }
 
     

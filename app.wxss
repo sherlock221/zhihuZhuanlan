@@ -30,6 +30,14 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 }
 
+.mu-3{
+  overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+
 .mu-1{
 overflow : hidden;
 text-overflow: ellipsis;
@@ -38,6 +46,11 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 }
  
+
+ 
+
 /** 布局文件 **/
 @import "utils/flex.wxss";
+/*组件*/
+@import "component/component.wxss";
 

@@ -50,10 +50,9 @@ Page({
    }
   },
  
-  onForwardColumn : function(){
-
+  onForwardColumn : function(event){ 
       wx.navigateTo({
-        url : "../column/column"
+        url : "../column/column?slug="+ event.currentTarget.dataset.slug
       });
   },
 

@@ -1,14 +1,13 @@
+<import src="../../../component/titleBar/title_bar.wxml"/>
+  
 <view class="content">
-
-
-
-
-
+ 
+ 
 <!-- 专栏 -->
  <template is="titleBar" data="{{...barInfo.column}}"></template>
 
-    <view class="column-list">
-        <view  bindtap="onForwardColumn" class="fx-row fx-row-center column-item" wx:for="{{columnList}}" wx:key="{{index}}">
+    <view class="column-list"> 
+        <view   catchtap="onForwardColumn"  data-slug="{{item.slug}}" class="fx-row fx-row-center column-item" wx:for="{{columnList}}" wx:key="{{index}}">
             <image mode="aspectFit"  class="column-head" src="{{item.avatar.src}}"></image>
             <view class="fx"> 
                     <view class="column-title mu-1">{{item.name}}</view>
@@ -17,7 +16,7 @@
             <view class="column-enter fx-col-center">进入专栏</view>
         </view>
     </view> 
-
+ 
     <view class="text-center">
             <button  data-btn-type="column" bindtap="onChangeData" class="btn-change" size="mini">换一换</button>
     </view>

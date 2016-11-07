@@ -4,19 +4,7 @@
 }
 
 
-.title-bar{
-    background: #ffffff;
-    position: relative;
-    font-size: 14px;
-    display: block;
-    font-weight: bold;
-}
 
-.title-solid{
-    margin-left: 15px;
-    height: 1px;
-    background: #d9d9d9;
-}
 
 
 

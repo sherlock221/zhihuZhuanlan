@@ -10,6 +10,15 @@ module.exports = {
             LIMIT : 4,
             OFFSET : 0
         }
+    },
+
+    //栏目页配置
+     COLUMN : {
+        "POST" : {
+            LIMIT : 20,
+            OFFSET : 0
+        }
+       
     }
 
 };
