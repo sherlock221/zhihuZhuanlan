@@ -1,10 +1,27 @@
 .column-main{
     padding : 0 16px;
 }
+ 
+.column-header{
+    padding-top: 20px;
+    margin-top: 18px;
+}
+ 
+.column-info-desc{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.column-follow-num{
+    font-size: 13px;
+    color: gray;
+}
 
 .column-icon{
     width: 152rpx;
     height : 152rpx;
+    background-color: #eeeeee;
     border-radius: 50%;
     overflow: hidden;
 }

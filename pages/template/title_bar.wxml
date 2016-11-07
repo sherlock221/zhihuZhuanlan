@@ -1,0 +1,7 @@
+<template name="titleBar">
+    <view>asdada</view>
+    <view class="fx-row fx-row-center title">
+        <text class="title-bar">{{name}}</text>
+        <view class="fx title-solid"></view>
+    </view> 
+ </template>

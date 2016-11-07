@@ -10,8 +10,4 @@
   <include src="view/footer.wxml" />
   
 
-  <template name="title-bar">
-  
-  </template>
-
 </view>

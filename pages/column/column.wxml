@@ -1,16 +1,22 @@
+<import src="title_bar.wxml" />
+   
 <view class="column-main">
 
-        <view class="column-header fx-column">
+        <view class="column-header fx-column fx-row-center">
             <image src="https://pic2.zhimg.com/6b2d0bce5_xl.jpg" mode="aspectFit" class="column-icon block"></image>
-            <text>
+              <text class="column-info-user">
+                Music Related
+             </text> 
+            <text class="column-info-desc">
                 关于音乐的一些想法，以及一些有意思的音乐的推荐。
             </text>
-            <button size="mini" type="success">关注专栏</button>
-            <text>
+            <button size="mini" type="primary" plain="true">关注专栏</button>
+            <text class="column-follow-num">
                 7434人关注
             </text>
         </view>
 
-
+                    
+        <template id="titleBar" data="{{barInfo.newPost}}"></template> 
 
 </view>
