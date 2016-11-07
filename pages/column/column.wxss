@@ -1,0 +1,10 @@
+.column-main{
+    padding : 0 16px;
+}
+
+.column-icon{
+    width: 152rpx;
+    height : 152rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}

@@ -1,0 +1,10 @@
+<view class="footer">
+
+    
+    <view class="footer-tips bbox">
+          <text >
+            在知乎创作
+        </text>
+    </view>
+
+</view>

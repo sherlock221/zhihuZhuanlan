@@ -1,0 +1,43 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+} 
+ 
+.bbox{
+  box-sizing: border-box;
+}
+
+.block{
+  display: block;
+}
+
+.text-center{
+  text-align: center;
+}
+.text-ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mu-2{
+  overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+
+.mu-1{
+overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+ 
+/** 布局文件 **/
+@import "utils/flex.wxss";
+

@@ -1,0 +1,16 @@
+<view class="column-main">
+
+        <view class="column-header fx-column">
+            <image src="https://pic2.zhimg.com/6b2d0bce5_xl.jpg" mode="aspectFit" class="column-icon block"></image>
+            <text>
+                关于音乐的一些想法，以及一些有意思的音乐的推荐。
+            </text>
+            <button size="mini" type="success">关注专栏</button>
+            <text>
+                7434人关注
+            </text>
+        </view>
+
+
+
+</view>
