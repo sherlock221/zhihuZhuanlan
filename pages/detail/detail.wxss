@@ -1,0 +1,71 @@
+page{
+    background-color: #fff
+}
+.detail-header{
+    margin-bottom: 30px;
+}
+.detail-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    margin-top: 22px;
+}  
+.detail-banner{
+    background-color : #eeeeee; 
+}
+.detail-banner-img{
+   width: 100%;
+} 
+.detail-user{
+    width: 36px;
+    height: 36px;
+    background-color : #eeeeee; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.detail-content{
+    margin-bottom:30px;
+}
+
+.detail-comment{
+    margin-top: 30px;
+}
+.detail-recommend{
+     margin-top: 30px;
+}
+
+.page-pd{
+    padding : 0 16px;
+}
+
+
+/** 评论 **/
+.comment-item{
+    margin-top: 30px;
+}
+.comment-user-name{
+    font-weight: bold;
+    font-size: 16px;
+} 
+.comment-content{
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+.comment-bar{
+    margin-bottom: 10px;
+}
+.comment-headr{
+    width: 36px;
+    height: 36px;
+    background-color : #eeeeee; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12px;
+}
+.comment-util{
+    color: gray;
+    font-size: 14px;
+}

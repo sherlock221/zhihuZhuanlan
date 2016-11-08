@@ -11,4 +11,8 @@ export default class StringUtil {
       return text;
     }
   }
+  
+  static urlToHttp(url){
+    return url.replace("https","http");
+  }
 }

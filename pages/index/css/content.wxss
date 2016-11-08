@@ -3,11 +3,6 @@
      padding :0 30rpx;
 }
 
-
-
-
-
-
 .column-list{
   display: block;
 } 

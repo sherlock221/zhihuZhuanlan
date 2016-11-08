@@ -1,14 +1,15 @@
 <import src="../../../component/titleBar/title_bar.wxml"/>
   
 <view class="content">
- 
- 
+  
+
+   
 <!-- 专栏 -->
  <template is="titleBar" data="{{...barInfo.column}}"></template>
 
     <view class="column-list"> 
         <view   catchtap="onForwardColumn"  data-slug="{{item.slug}}" class="fx-row fx-row-center column-item" wx:for="{{columnList}}" wx:key="{{index}}">
-            <image mode="aspectFit"  class="column-head" src="{{item.avatar.src}}"></image>
+            <image  mode="aspectFill"  class="column-head" src="{{item.avatar.src}}"></image>
             <view class="fx"> 
                     <view class="column-title mu-1">{{item.name}}</view>
                     <view class="column-desc mu-2">{{item.description}}</view>
@@ -29,7 +30,7 @@
 
    <view class="column-list">
         <view class="fx-row fx-row-center column-item" wx:for="{{postList}}" wx:key="{{index}}">
-            <image mode="aspectFit"  class="column-head" src="{{item.image_url}}"></image>
+            <image mode="aspectFill"  class="column-head" src="{{item.image_url}}"></image>
             <view class="fx"> 
                     <view class="column-title mu-1">{{item.title}}</view>
                     <view class="column-desc mu-2">{{item.summary}}</view>

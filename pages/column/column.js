@@ -2,7 +2,8 @@
 //获取应用实例
 
 import API  from "../../data/api";
-
+import Util from "../../utils/util";
+ 
 Page({
   data: { 
     columnInfo : {},
@@ -15,14 +16,14 @@ Page({
 
   onLoad: function (query) {
     this.query = query;
-    this.loadColumn();
-    this.loadPosts();
+  
     
   }, 
    
   onReady : function(){
     console.log("ready.. column");
-
+    this.loadColumn();
+    this.loadPosts();
   },
   
   onForwardPostDetail : function(e){
@@ -37,8 +38,12 @@ Page({
         .then((res)=>{
             let data = res.data;
             if(data.avatar){
-              data.avatar.src = data.avatar.template.replace("{id}_{size}",data.avatar.id+"_xl");
-            }     
+              data.avatar.src = Util.string.urlToHttp(data.avatar.template.replace("{id}_{size}",data.avatar.id+"_xl"));
+            }  
+              wx.setNavigationBarTitle({
+                title: data.name
+              })
+
             this.setData({
               columnInfo : data
             });
@@ -56,6 +61,10 @@ Page({
                     let date = new Date(obj.publishedTime);
                     obj.publishedTime = `${date.getMonth()+1}月${date.getDate()}日`;
                     if(obj.content.length > 100) obj.content = obj.content.substring(0,100);
+
+
+                    obj.titleImage = Util.string.urlToHttp(obj.titleImage);
+
                     return obj;
                 });
                 this.setData({

@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 
-import trendingUtil from "../../utils/trending/trendingRepoModel";
+import Util from "../../utils/util";
 import API  from "../../data/api";
 
 Page({
@@ -20,6 +20,8 @@ Page({
 
     this.loadPost();
     this.loadColumn();
+
+      
 
   }, 
    
@@ -50,6 +52,13 @@ Page({
    }
   },
  
+ onBindError : function(e){
+   console.log("ddd..-->",e);
+ },
+
+ bindload : function(e){
+   console.log("ddd..-->",e);
+ },
   onForwardColumn : function(event){ 
       wx.navigateTo({
         url : "../column/column?slug="+ event.currentTarget.dataset.slug
@@ -64,11 +73,9 @@ Page({
       .then((res)=>{
                console.log("res->",res);
                let data = res.data.map((d)=>{
-                  d.avatar.src = d.avatar.template.replace("{id}_{size}",d.avatar.id+"_xl");
+                  d.avatar.src = Util.string.urlToHttp(d.avatar.template.replace("{id}_{size}",d.avatar.id+"_xl"));
                   return d;
               });
-              
-
               console.log("渲染数据..",data);
               this.setData({
                 "columnList": data
@@ -84,8 +91,14 @@ Page({
     API.getRecommendPosts(Config.HOME.POST.LIMIT,Config.HOME.POST.OFFSET)
       .then((res)=>{
               console.log("res- POST>",res);
+
+              let data = res.data.map((d)=>{
+                  d.image_url = Util.string.urlToHttp(d.image_url);
+                  return d;
+              });
+
               this.setData({
-                postList : res.data
+                postList : data
               });
         });  
     

@@ -21,6 +21,7 @@ export default class NetUtil {
   static requestJson(url,data,method){
        data = data || {}; 
        return new Promise(function(resolve, reject) {
+            // wx.showNavigationBarLoading();
             wx.request({
                     "method":method,
                     "url": url, 
@@ -29,10 +30,13 @@ export default class NetUtil {
                         'Content-Type': 'application/json'
                     },
                     success: function(res) {
+                    //    wx.hideNavigationBarLoading();
                        resolve(res);
                     },
                     fail : function(err){
+                        // wx.hideNavigationBarLoading();
                         reject(err);
+                      
                     }
                 })
        });
