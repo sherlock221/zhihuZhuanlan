@@ -25,12 +25,11 @@ Page({
 
   },
   
-  onForwardColumn : function(){
+  onForwardPostDetail : function(e){
       wx.navigateTo({
-        url : "../column/column"
+        url : "../detail/detail?slug="+e.currentTarget.dataset.slug
       });
   },
-
 
   loadColumn : function(){
       //获得栏目信息

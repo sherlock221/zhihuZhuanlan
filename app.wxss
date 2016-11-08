@@ -5,6 +5,11 @@
   box-sizing: border-box;
 } 
  
+/*设置背景颜色*/
+page{
+  background-color: #fbfcfc;
+}
+
 .bbox{
   box-sizing: border-box;
 }

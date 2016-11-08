@@ -21,7 +21,7 @@
 
 
         <view class="cover-list">
-            <view class="cover-item fx-column"  wx:for="{{postList}}" wx:key="{{index}}">
+            <view  data-slug="{{item.slug}}" catchtap="onForwardPostDetail"  class="cover-item fx-column"  wx:for="{{postList}}" wx:key="{{index}}">
                 <image src="{{item.titleImage}}" mode="scaleToFill" class="cover-image" />
                 <text class="cover-title">{{item.title}}</text>
                 <text class="cover-desc mu-3">{{item.content}}</text>

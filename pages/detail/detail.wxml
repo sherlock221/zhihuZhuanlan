@@ -1,0 +1,46 @@
+<import src="../../component/titleBar/title_bar.wxml"/>
+<view>
+    <view class="detail-header">
+        <image src="{{detail.targetPost.titleImage}}" mode="" class="detail-banner"  />
+        <view>
+            <text>{{detail.targetPost.title}}</text>
+        </view>
+    </view>
+
+
+    <view class="detail-content">
+        反正内容很多 哈哈哈一坨坨
+    </view>
+
+    <view class="detail-comment">
+        <template is="titleBar" data="{{...barInfo.comment}}"  />    
+    </view>
+
+
+   <view class="detail-recommend">
+        <template is="titleBar" data="{{...barInfo.recommend}}"  />    
+
+        <view class="comment-list">
+            <view class="comment-item" wx:for="{{commentList}}" wx:key="{{index}}">
+                <view class="comment-bar fx-row fx-row-center">
+                    <image src="{{item.author.src}}" mode=""  class="comment-headr"/>
+                    <text>{{item.author.name}}</text>
+                </view>
+                <view class="comment-content">
+                    {{item.content}}
+                </view>
+                <view class="comment-util fx-row fx-row-center fx-row-left">
+                        <text>{{item.createdTime}}</text>
+                        <text>回复</text>
+                        <text>赞</text>
+                        <text>举报</text>
+                </view>
+            
+            </view>
+        </view>
+
+   </view>
+
+
+
+</view>

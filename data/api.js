@@ -40,6 +40,26 @@ export default class  API {
         return Util.net.getJson(`${HOST}/columns/${slug}/posts`,{limit : limit , offset : offset});    
     }
 
+
+
+     /**
+     * 获取文章详情页
+     */
+    static getPostDetailBySlug(slug){
+        return Util.net.getJson(`${HOST}/posts/${slug}/contributed`,{});    
+    }
+
+    /**
+     * 获取评论
+     */
+    static getPostCommentsBySlug(slug,limit){
+        return Util.net.getJson(`${HOST}/posts/${slug}/comments`,{limit : limit});    
+    }
+
+
+
+    
+
     
 
 
