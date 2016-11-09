@@ -14,4 +14,26 @@
     border-right: 0
 }
 
+.edit-icon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 18px;
+  
+}
+
+.edit-post{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+   background-color: #009688;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   text-align: center;
+   color: #fff;
+    
+     box-shadow: 0px 3px 9px 2px #BFBFBF;
+}
 

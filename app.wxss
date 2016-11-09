@@ -67,6 +67,12 @@ display: -webkit-box;
   margin-left: 10px;
 } 
 
+
+.loading-img{
+    width: 48rpx;
+    height : 48rpx;
+}
+
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg); 

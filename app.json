@@ -1,8 +1,10 @@
 {
   "pages":[
+      
       "pages/index/index",
       "pages/column/column",
       "pages/detail/detail",
+      "pages/edit/edit",
 
     "pages/logs/logs"
   ], 

@@ -18,13 +18,15 @@ Page({
   onLoad: function () {
     var that = this; 
 
-    this.loadPost();
-    this.loadColumn();
+  
 
   }, 
    
   onReady : function(){
     console.log("ready..");
+
+      this.loadPost();
+    this.loadColumn();
   },
 
   //下拉刷新
@@ -63,6 +65,11 @@ Page({
       });
   },
 
+   onForwardEditPost : function(event){ 
+      wx.navigateTo({
+        url : "../edit/edit"
+      });
+  },
 
   loadColumn : function(){
      let Config = getApp().Config;

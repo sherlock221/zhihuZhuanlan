@@ -15,6 +15,13 @@ export default class UiUtil {
       }  
   }
 
+  static toast(text){
+      wx.showToast({
+        title: text,
+        icon : false
+    });
+  }
+
   static preImage(obj){
       let urls = [];
       if(obj instanceof Array){
