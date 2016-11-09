@@ -1,6 +1,7 @@
 
 import stringUtil from "stringUtil.js";
 import netUtil from "netUtil.js";
+import uiUtil from "uiUtil.js";
 
 function formatTime(date) {
   var year = date.getFullYear()
@@ -25,5 +26,6 @@ function formatNumber(n) {
 module.exports = {
   "formatTime": formatTime,
   "string" :  stringUtil,
-  "net" : netUtil
+  "net" : netUtil,
+  "UI" : uiUtil
 } 

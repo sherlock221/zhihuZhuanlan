@@ -12,7 +12,7 @@ Page({
       column : {"name" : '专栏·发现'},
       post   : {"name" : "文章·发现"}
     }
-  },
+  }, 
   
 
   onLoad: function () {
@@ -21,13 +21,10 @@ Page({
     this.loadPost();
     this.loadColumn();
 
-      
-
   }, 
    
   onReady : function(){
     console.log("ready..");
-  
   },
 
   //下拉刷新
@@ -39,6 +36,7 @@ Page({
   
    //事件处理函数
   onChangeData: function(event) {
+    Util.UI.loading(true);
    let type = event.target.dataset.btnType;
    switch(type){
      case "column":
@@ -80,6 +78,8 @@ Page({
               this.setData({
                 "columnList": data
               });
+
+               Util.UI.loading(false);
                 
         });  
 
@@ -100,6 +100,8 @@ Page({
               this.setData({
                 postList : data
               });
+
+               Util.UI.loading(false);
         });  
     
   }

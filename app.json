@@ -5,13 +5,12 @@
       "pages/detail/detail",
 
     "pages/logs/logs"
-  ],
+  ], 
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#009688",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black",
-    "backgroundColor" : "#fbfcfc"
+    "navigationBarTextStyle":"light"
   }
 }
 

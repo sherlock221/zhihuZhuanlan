@@ -52,8 +52,8 @@ export default class  API {
     /**
      * 获取评论
      */
-    static getPostCommentsBySlug(slug,limit){
-        return Util.net.getJson(`${HOST}/posts/${slug}/comments`,{limit : limit});    
+    static getPostCommentsBySlug(slug,limit,offset){
+        return Util.net.getJson(`${HOST}/posts/${slug}/comments`,{limit : limit,offset : offset});    
     }
 
 

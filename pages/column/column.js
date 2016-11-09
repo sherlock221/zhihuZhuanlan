@@ -61,10 +61,8 @@ Page({
                     let date = new Date(obj.publishedTime);
                     obj.publishedTime = `${date.getMonth()+1}月${date.getDate()}日`;
                     if(obj.content.length > 100) obj.content = obj.content.substring(0,100);
-
-
+                    if(obj.content) obj.content = Util.string.filterHtmlTag(obj.content);
                     obj.titleImage = Util.string.urlToHttp(obj.titleImage);
-
                     return obj;
                 });
                 this.setData({

@@ -12,6 +12,10 @@ export default class StringUtil {
     }
   }
   
+  static filterHtmlTag(str){
+    let reg = /<[^<>]+>/g;
+    return str.replace(reg,'')
+  }
   static urlToHttp(url){
     return url.replace("https","http");
   }

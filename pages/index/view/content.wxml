@@ -6,12 +6,12 @@
    
 <!-- 专栏 -->
  <template is="titleBar" data="{{...barInfo.column}}"></template>
-
+ 
     <view class="column-list"> 
         <view   catchtap="onForwardColumn"  data-slug="{{item.slug}}" class="fx-row fx-row-center column-item" wx:for="{{columnList}}" wx:key="{{index}}">
             <image  mode="aspectFill"  class="column-head" src="{{item.avatar.src}}"></image>
             <view class="fx"> 
-                    <view class="column-title mu-1">{{item.name}}</view>
+                    <view class="column-title mu-2">{{item.name}}</view>
                     <view class="column-desc mu-2">{{item.description}}</view>
             </view>
             <view class="column-enter fx-col-center">进入专栏</view>
